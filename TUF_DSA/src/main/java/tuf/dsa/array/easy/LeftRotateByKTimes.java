@@ -26,6 +26,7 @@ public class LeftRotateByKTimes {
      * @param k      the k
      */
     private static void usingReverse(int[] arr, int length, int k) {
+        k = k % length + 1; // if k > arr.length
         reverse(arr, 0, length);
         reverse(arr, 0, length - k);
         reverse(arr, length - k + 1, length);
