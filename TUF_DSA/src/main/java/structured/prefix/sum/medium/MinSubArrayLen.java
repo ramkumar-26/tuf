@@ -2,6 +2,11 @@ package structured.prefix.sum.medium;
 
 //https://leetcode.com/problems/minimum-size-subarray-sum/
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * The type Min sub array len.
  */
@@ -15,6 +20,7 @@ public class MinSubArrayLen {
         int target = 7;
         int[] nums = {2, 3, 1, 2, 4, 3};
         System.out.println("Min Length : " + findMinLength(nums, target));
+        Set set = new HashSet<>(Collections.singleton(nums));
     }
 
     /**
